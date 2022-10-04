@@ -1,0 +1,26 @@
+SERVIDOR - Software que é o próprio banco de dados.
+CLIENTE - Software que USA o servidor, ou seja, usa o banco de dados.
+
+- INSERIR dados
+- LER dados
+- ALTERAR dados
+- EXCLUIR dados
+
+SQL = Banco de dados RELACIONAL
+NoSQL = Banco de dados NÃO RELACIONAL
+
+usuarios
+-- nome
+-- sobrenome
+-- email
+-- cpf
+-- grupo de interesses
+--- programação
+---- php
+---- javascript
+----- node
+----- react
+---- python
+--- jogos
+--- eletronicos
+--- basquete

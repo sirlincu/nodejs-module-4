@@ -15,7 +15,7 @@
 <h1>Usuários</h1>
 <ul>
 {{ #users }}
-    <li>{{ name.firstName }} - {{ age }} anos</li>
+    <li>{{ name.firstName }} - ({{ age }}) - {{ email }} <a href="/users/{{_id}}/addAge">+1 ano de vida</a> | <a href="/users/{{_id}}/subAge">-1 ano de vida</a> | <a href="/users/{{ id }}/deleteUser">Excluir</a></li>
 {{ /users }}
 </ul>
 

@@ -51,3 +51,32 @@ export const addUserAction = async (req: Request, res: Response) => {
     }
     res.redirect('/');
 };
+
+export const incrementAgeAction = async (req: Request, res: Response) => {
+    let id: string = req.params.id;
+    let user = await User.findOne({ _id: id });
+    if(user){
+        user.age++;
+        await user.save();
+    }
+    res.redirect('/');
+};
+
+export const decrementAgeAction = async (req: Request, res: Response) => {
+    let id: string = req.params.id;
+    let user = await User.findOne({ _id: id });
+    if(user){
+        user.age--;
+        await user.save();
+    }
+    res.redirect('/');
+};
+
+export const deleteUserAction = async (req: Request, res: Response) => {
+    let id: string = req.params.id;
+    let user = await User.findOne({ _id: id });
+    if(user){
+        await user.remove();
+    }
+    res.redirect('/');
+};
